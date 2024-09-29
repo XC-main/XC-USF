@@ -1,0 +1,15 @@
+> A <- matrix(1:100, nrow=10)
+> B <- matrix(1:1000, nrow=10)
+> t(A)
+> t(B)
+> a<-1:10
+> b<-11:20
+> A%%a
+> B%%b
+> a<-1:10
+> b<-1:10
+> A%%t(A)
+> B%%t(B)
+> S<-matrix(2:5,nrow=2)
+> det(S)
+> solve(S)

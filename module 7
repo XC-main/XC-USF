@@ -1,0 +1,9 @@
+AirPassengers
+head(AirPassengers)
+tail(AirPassengers)
+typeof(AirPassengers)
+s3 <- list(Month = "Mar", Passengers = 193, Year = 1952)
+s3
+setClass("Flight", slots = list(Month = "character", Passengers = "numeric", Year = "numeric"))
+s4 <- new("Flight", Month = "Mar", Passengers = 193, Year = 1949)
+s4

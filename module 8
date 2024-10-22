@@ -1,0 +1,14 @@
+library(data.table)
+library(plyr)
+library(Rcpp)
+x = read.table("C:/Users/Owner/Documents/USF Fall 2024/LIS4370 R Programming/Assignment 6 Dataset.txt", header = TRUE, sep = ",")
+x
+y <- ddply(x, "Sex", transform, Grade.Average=mean(Grade))
+y
+write.table(y,"Sorted_Average")
+write.table(y, "Average_Sort.csv", sep = ",")
+newx <- subset(x, grepl("[iI]", x$Name))
+newx
+write.table(newx,"DataSubset",sep=",")
+write.csv(newx, "i_students.csv", row.names = FALSE)
+write.csv(newx, file = file.choose(), row.names = FALSE)

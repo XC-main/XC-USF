@@ -1,0 +1,4 @@
+> InfantMort <- read.csv("C:/Users/Owner/Downloads/Leinhardt.csv")
+> barplot(InfantMort$infant, main = "Infant Mortality Per Country", names.arg = InfantMort$rownames, las = 2)
+> ggplot(InfantMort, aes(x = income, y = infant)) + geom_line() + labs(title = "Infant Mortality rate by Income")
+> xyplot(InfantMort$infant ~ InfantMort$income)

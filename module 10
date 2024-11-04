@@ -1,0 +1,9 @@
+Package: MLBBatting
+Title: Major League Baseball Batting Comparison
+Version: 0.0.0.9000
+Authors: Xavier Cajigas Rivera <xcajigasrivera.usf.edu>
+Description: This package allows the user to compare the
+             batting statistics of two players at a time.
+Depends: R(>= 4.1.1)
+License: CCO
+LazyData: TRUE
